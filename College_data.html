@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Login Page</title>
+    <style type="text/css">
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .col-md-6 {
+            flex-basis: 48%;
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function login() {
+            alert("Login successful!");
+            // Add any additional logic or functionality you want to perform upon successful login
+        }
+
+        function submitForm() {
+            alert("Placement data has been collected.");
+            // Add any additional logic or functionality you want to perform upon form submission
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>College Login Page</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Student Placement Cell</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="college">College:</label>
+                        <input type="text" class="form-control" id="college" placeholder="Enter college">
+                    </div>
+                    <div class="form-group">
+                        <label for="degree">Degree:</label>
+                        <input type="text" class="form-control" id="degree" placeholder="Enter degree">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year:</label>
+                        <input type="text" class="form-control" id="year" placeholder="Enter year">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
